@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/firstSummand"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/firstNumTextView"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/secondSummand"
+        android:layout_width= "match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/firstSummand"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:text="@string/secondNumTextView"
+        />
+
+    <EditText
+        android:id="@+id/firstSummandBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/firstSummand"
+        android:layout_centerVertical="true"
+        android:hint="@string/firstSummandBtn"
+        android:inputType="numberSigned" />
+    <EditText
+        android:id="@+id/secondSummandBtn"
+        android:inputType="numberSigned"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/firstSummandBtn"
+        android:layout_alignEnd="@+id/secondSummand"
+        android:hint="@string/firstSummandBtn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/secondSummandBtn"
+        android:text="@string/sumBtn"
+        android:onClick="sum"
+/>
+</RelativeLayout>
