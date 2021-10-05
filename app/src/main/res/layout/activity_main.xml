@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/firstSummand"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/TextViewHeight"
         android:layout_centerVertical="true"
         android:gravity="center_vertical"
         android:text="@string/firstNumTextView"
@@ -18,7 +18,7 @@
     <TextView
         android:id="@+id/secondSummand"
         android:layout_width= "match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/TextViewHeight"
         android:layout_below="@+id/firstSummand"
         android:gravity="center_vertical"
         android:textColor="@color/black"
@@ -28,7 +28,7 @@
     <EditText
         android:id="@+id/firstSummandBtn"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/TextViewHeight"
         android:layout_alignRight="@+id/firstSummand"
         android:layout_centerVertical="true"
         android:hint="@string/firstSummandBtn"
@@ -37,7 +37,7 @@
         android:id="@+id/secondSummandBtn"
         android:inputType="numberSigned"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/TextViewHeight"
         android:layout_below="@+id/firstSummandBtn"
         android:layout_alignEnd="@+id/secondSummand"
         android:hint="@string/firstSummandBtn"/>

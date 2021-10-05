@@ -6,7 +6,7 @@
     tools:context=".SecondActivity">
 <TextView
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="@dimen/TextViewHeight"
     android:layout_centerVertical="true"
     android:id="@+id/resView"
     android:gravity="center"
